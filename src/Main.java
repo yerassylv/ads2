@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 
 public class Main {
 
@@ -10,6 +11,7 @@ public class Main {
         aL.add(5);
         aL.add(7);
         aL.add(10);
+        System.out.println("Test of the MyArrayList: ");
         System.out.println("My array list:");
         aL.printArr();
         System.out.println("Size of array list: " + aL.size());
@@ -42,6 +44,39 @@ public class Main {
         System.out.println("Exist of element 11: " + aL.exist(11));
 
 
+        System.out.println("Test of the MyLinkedList: ");
+
+
+
+        MyList ll = new MyLinkedList<>();
+        ll.add(2);
+        ll.add(1);
+        ll.add(67);
+        ll.add(4);
+        ll.add(3);
+        ll.add(21);
+        System.out.println("My linked list: " + ll.toString());
+        ll.removeFirst();
+        ll.removeLast();
+        System.out.println("Remove first and last element of linked list: " + ll.toString());
+        ll.add(0,34);
+        ll.addLast(2);
+        System.out.println("Add element at index 0 and last element of linked list: " + ll.toString());
+        ll.remove(3);
+        System.out.println("Remove element at index 0: " + ll.toString());
+        ll.addFirst(11);
+        System.out.println("Add first element of linked list: " + ll.toString());
+        ll.set(3, 1);
+        System.out.println("Set element at index 3: " + ll.toString());
+        System.out.println("Get element at index 2: "+ll.get(2));
+
+        System.out.println("Get first element:" + ll.getFirst());
+        ll.addFirst(2);
+        ll.size();
+        System.out.println("Size of linked list: " + ll.size());
+
+
+        System.out.println("MyLinkedList:"+ll.toString());
 
 
 
